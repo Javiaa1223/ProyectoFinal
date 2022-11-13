@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
@@ -30,6 +30,11 @@
     <title>FRONT END DEVELOPER</title>
 
 </head>
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
 
 <body>
     <!-- Creating a hamburger menu. -->
@@ -155,107 +160,84 @@
             <div class="row">
                 <div class="col-12 slideShow">
                     <div class="titulos1" style="text-align: center;">INTERESES</div>
-                    <div class="csslider">
-                        <input type="radio" name="slides" id="slides_1" checked />
-                        <input type="radio" name="slides" id="slides_2" />
-                        <input type="radio" name="slides" id="slides_3" />
-                        <input type="radio" name="slides" id="slides_4" />
-                        <input type="radio" name="slides" id="slides_N" />
-                        <ul>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="cardslide">
-                                                <img src="./images/perros.jpg" alt="fotoInt" class="fotoInt">
-                                            </div>
+
+
+                    <ul>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cardslide">
+                                            <img src="./images/perros.jpg" alt="fotoInt" class="fotoInt mySlides">
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="cardslide">
-                                                <img src="./images/renault_rs19_formula_1_2019_4k_8k_2-3840x2160.jpg" alt="fotoInt" class="fotoInt">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="cardslide">
-                                                <img src="./images/futbol.jpg" alt="fotoInt" class="fotoInt">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="cardslide">
-                                                <img src="./images/musica.jpg" alt="fotoInt" class="fotoInt">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="cardslide">
-                                                <img src="./images/viajes.jpg" alt="fotoInt" class="fotoInt">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="cardslide">
-                                                <img src="./images/renault_rs19_formula_1_2019_4k_8k_2-3840x2160.jpg" alt="fotoInt" class="fotoInt">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="arrows">
-                            <label for="slides_1"></label>
-                            <label for="slides_2"></label>
-                            <label for="slides_3"></label>
-                            <label for="slides_4"></label>
-                            <label for="slides_N"></label>
-                            <label for="slides_1" class="goto-first"></label>
-                            <label for="slides_N" class="goto-last"></label>
-                        </div>
-                        <div class="navigation">
-                            <div>
-                                <label for="slides_1"></label>
-                                <label for="slides_2"></label>
-                                <label for="slides_3"></label>
-                                <label for="slides_4"></label>
-                                <label for="slides_N"></label>
                             </div>
-                        </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cardslide">
+                                            <img src="./images/renault_rs19_formula_1_2019_4k_8k_2-3840x2160.jpg" alt="fotoInt" class="fotoInt mySlides">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cardslide">
+                                            <img src="./images/futbol.jpg" alt="fotoInt" class="fotoInt mySlides">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cardslide">
+                                            <img src="./images/musica.jpg" alt="fotoInt" class="fotoInt mySlides">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cardslide">
+                                            <img src="./images/viajes.jpg" alt="fotoInt" class="fotoInt mySlides">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cardslide">
+                                            <img src="./images/renault_rs19_formula_1_2019_4k_8k_2-3840x2160.jpg" alt="fotoInt" class="fotoInt mySlides">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 descarga">
+                        <a href="./images/coding.png" class="descargaCv" target="_blank">DESCARGA MI CV</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 descarga">
-                    <a href="./images/coding.png" class="descargaCv" target="_blank">DESCARGA MI CV</a>
-                </div>
-            </div>
-        </div>
         </div>
         </div>
     </main>
@@ -286,5 +268,23 @@
             </div>
     </footer>
 </body>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+    }
+</script>
 
 </html>

@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -13,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
@@ -30,6 +31,7 @@
     <title>FRONT END DEVELOPER</title>
 
 </head>
+
 
 <body>
     <header>
@@ -61,7 +63,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12" style="text-align:center ;">
+                <div class="col-12 animate__animated animate__slideInLeft" style="text-align:center ;">
                     <span class="tituloSeccion">-</span>
                     <span class="tituloSeccion">P</span>
                     <span class="tituloSeccion">R</span>
@@ -77,33 +79,190 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="titulos2">
-                        <p style="text-align: center ;">ESTOS SON ALGUNOS DE LOS TRABAJOS QUE HE REALIZADO:</p>
+                    <div class="titulos2" style="text-align: center;">
+                        ESTOS SON ALGUNOS DE LOS TRABAJOS QUE HE REALIZADO:
                     </div>
-                    <div class="carrusel">
-                        <img src="./images/ejemplocarrusel.jpg" alt="ejemplocarrusel" class="primeraimg">
-                    </div>
-                    <div class="row btngris" style="display: flex;">
-                        <div class="col-6">
-                            <form action="" method="post">
-                                <input type="submit" name="sourceCod" value="CODIGO FUENTE" class="cardbtn">
-                            </form>
-                        </div>
-                        <div class="col-6">
-                            <a href="index.html" class="cardbtn" target="_blank">VER ONLINE</a>
+                    <div class="col-12 slideShow">
+                        <div class="csslider">
+                            <input type="radio" name="slides" id="slides_1" checked />
+                            <input type="radio" name="slides" id="slides_2" />
+                            <input type="radio" name="slides" id="slides_3" />
+                            <input type="radio" name="slides" id="slides_4" />
+                            <input type="radio" name="slides" id="slides_N" />
+                            <ul>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cardslide">
+                                                    <img src="./images/perros.jpg" alt="fotoInt" class="fotoInt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cardslide">
+                                                    <img src="./images/renault_rs19_formula_1_2019_4k_8k_2-3840x2160.jpg" alt="fotoInt" class="fotoInt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cardslide">
+                                                    <img src="./images/futbol.jpg" alt="fotoInt" class="fotoInt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cardslide">
+                                                    <img src="./images/musica.jpg" alt="fotoInt" class="fotoInt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cardslide">
+                                                    <img src="./images/viajes.jpg" alt="fotoInt" class="fotoInt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cardslide">
+                                                    <img src="./images/renault_rs19_formula_1_2019_4k_8k_2-3840x2160.jpg" alt="fotoInt" class="fotoInt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="arrows">
+                                <label for="slides_1"></label>
+                                <label for="slides_2"></label>
+                                <label for="slides_3"></label>
+                                <label for="slides_4"></label>
+                                <label for="slides_N"></label>
+                                <label for="slides_1" class="goto-first"></label>
+                                <label for="slides_N" class="goto-last"></label>
+                            </div>
+                            <div class="navigation">
+                                <div>
+                                    <label for="slides_1"></label>
+                                    <label for="slides_2"></label>
+                                    <label for="slides_3"></label>
+                                    <label for="slides_4"></label>
+                                    <label for="slides_N"></label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="titulos1" style="text-align: center;">STACK TECNOLOGICO</div>
-                        <div class="carrusel">
-                            <i class="fa-brands fa-css3-alt icon"></i>
-                            <i class="fa-brands fa-css3-alt icon"></i>
-                            <i class="fa-brands fa-php icon"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="row btngris" style="display: flex;">
+                <div class="col-6">
+                    <form action="" method="post">
+                        <input type="submit" name="sourceCod" value="CODIGO FUENTE" class="descargaCv">
+                    </form>
                 </div>
+                <div class="col-6">
+                    <a href="index.html" class="descargaCv" target="_blank">VER ONLINE</a>
+                </div>
+            </div>`
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="titulos1" style="text-align: center;">STACK TECNOLOGICO</div>
+                <ul>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cardslide">
+                                        <i class="fa-brands fa-css3-alt icon mySlides"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cardslide">
+                                        <i class="fa-brands fa-html5 icon mySlides"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cardslide">
+                                        <i class="fa-brands fa-php icon mySlides"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cardslide">
+                                        <i class="fa-brands fa-git-alt icon mySlides"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cardslide">
+                                        <i class="fa-brands fa-microsoft icon mySlides"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cardslide">
+                                        <i class="fab fa-github icon mySlides"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <!--   seccion footer -->
@@ -131,5 +290,23 @@
             </div>
     </footer>
 </body>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+    }
+</script>
 
 </html>

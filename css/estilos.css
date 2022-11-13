@@ -2,6 +2,7 @@ body {
     font-size: large;
     background-color: #121212;
     color: grey;
+    margin: 30px;
 }
 
 * {
@@ -50,6 +51,7 @@ p {
 
 .segunda:hover {
     color: rgba(209, 212, 48, 0.836);
+    transform: scale(1.5);
 }
 
 .front {
@@ -68,12 +70,6 @@ p {
     text-align: center;
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
-}
-
-.frontend:hover {
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    transition: transform .2s ease;
 }
 
 .icon {
@@ -269,18 +265,28 @@ textarea::placeholder {
 }
 
 .fotoPerfil {
-    border-radius: 10%;
-    width: 400px;
+    width: 380px;
     -webkit-filter: grayscale(80%);
     filter: grayscale(100%);
+    text-align: center;
 }
 
 .fotoPerfil:hover {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.3, 1.3);
     transition: transform 0.2s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.infPers {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
 }
 
 .fotoP {
+    overflow: hidden;
+    width: 80%;
     text-align: center;
 }
 
@@ -896,10 +902,14 @@ ul {
     transform: rotate(225deg);
 }
 
-.cardSlide1 {
-    width: 100%;
+.fotoInt {
+    height: 500px;
+    text-align: center;
 }
 
-.fotoInt {
+.cardslide {
     width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
 }
